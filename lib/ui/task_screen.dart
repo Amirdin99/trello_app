@@ -151,7 +151,8 @@ class _TaskScreenState extends State<TaskScreen> {
                                              ),
                                            ),
                                          );
-                                       }), onReorder: (oldIndex,newIndex){
+                                       }),
+                                       onReorder: (oldIndex,newIndex){
                                      setState(() {
                                        // this adjustment is needed when moving down the list
                                        if (oldIndex < newIndex) {
